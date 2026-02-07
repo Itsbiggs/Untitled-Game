@@ -1,0 +1,26 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "",
+    "expandedProjectPaths": [
+    ],
+    "fileStates": {
+        "scenes/maps/tilesets/Grassland.tsx": {
+            "scaleInEditor": 1
+        }
+    },
+    "last.exportedFilePath": "/home/paulc/projects/Untitled-Game/scenes/maps",
+    "last.imagePath": "/home/paulc/projects/Untitled-Game/scenes/maps/assets",
+    "map.lastUsedExportFilter": "Godot 4 Scene files (*.tscn)",
+    "map.lastUsedFormat": "tmx",
+    "map.orientation": "2",
+    "openFiles": [
+    ],
+    "project": "untitled.tiled-project",
+    "recentFiles": [
+        "scenes/maps/tilesets/Grassland.tsx"
+    ],
+    "tileset.lastUsedFormat": "tsx"
+}

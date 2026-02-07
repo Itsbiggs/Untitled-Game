@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://drul31hcugi2x"]
+
+[ext_resource type="Texture2D" uid="uid://723i7b085omv" path="res://scenes/characters/fighter/Fighter placeholder.png" id="1_sp85y"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kirrq"]
+size = Vector2(32, 32)
+
+[node name="Fighter" type="CharacterBody2D" unique_id=725756720]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2054948866]
+position = Vector2(0, -16)
+texture = ExtResource("1_sp85y")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=266394540]
+position = Vector2(0, -16)
+shape = SubResource("RectangleShape2D_kirrq")
