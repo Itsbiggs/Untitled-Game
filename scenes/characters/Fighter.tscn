@@ -1,16 +1,16 @@
 [gd_scene format=3 uid="uid://drul31hcugi2x"]
 
-[ext_resource type="Texture2D" uid="uid://723i7b085omv" path="res://scenes/characters/fighter/Fighter placeholder.png" id="1_sp85y"]
+[ext_resource type="Texture2D" uid="uid://3stqruyqaajm" path="res://assets/characters/units/player/Character0_Idle.png" id="1_idle"]
+[ext_resource type="Script" path="res://scripts/fighter.gd" id="2_fighter"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_kirrq"]
-size = Vector2(32, 32)
+[node name="Fighter" type="Node2D"]
+script = ExtResource("2_fighter")
 
-[node name="Fighter" type="CharacterBody2D" unique_id=725756720]
-
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2054948866]
-position = Vector2(0, -16)
-texture = ExtResource("1_sp85y")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=266394540]
-position = Vector2(0, -16)
-shape = SubResource("RectangleShape2D_kirrq")
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -80)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_idle")
+hframes = 8
+vframes = 5
+frame = 8
+flip_h = true
