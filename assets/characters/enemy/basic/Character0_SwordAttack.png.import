@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dsubkyoog00gc"
-path="res://.godot/imported/Character0_SwordAttack.png-3df2c672d812db5e63350e77450d3696.ctex"
+uid="uid://ct5ec2vbf0w2r"
+path="res://.godot/imported/Character0_SwordAttack.png-4473415f704f37aed1de0d82ad44e950.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/characters/enemy/basic/Character0_SwordAttack.png"
-dest_files=["res://.godot/imported/Character0_SwordAttack.png-3df2c672d812db5e63350e77450d3696.ctex"]
+source_file="res://assets/characters/units/player/Character0_SwordAttack.png"
+dest_files=["res://.godot/imported/Character0_SwordAttack.png-4473415f704f37aed1de0d82ad44e950.ctex"]
 
 [params]
 

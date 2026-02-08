@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://56cvlp718wir"
-path="res://.godot/imported/Character0_Damage.png-139acac23132ef02e7bb8b6098a98fa9.ctex"
+uid="uid://bvpk0i3vhwqvs"
+path="res://.godot/imported/Character0_Damage.png-87520072f16be26ae00ae709a743472e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/characters/enemy/basic/Character0_Damage.png"
-dest_files=["res://.godot/imported/Character0_Damage.png-139acac23132ef02e7bb8b6098a98fa9.ctex"]
+source_file="res://assets/characters/units/player/Character0_Damage.png"
+dest_files=["res://.godot/imported/Character0_Damage.png-87520072f16be26ae00ae709a743472e.ctex"]
 
 [params]
 

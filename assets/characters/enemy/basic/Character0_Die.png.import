@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://s1v53ioi2ekd"
-path="res://.godot/imported/Character0_Die.png-d4b9318506b517ca5c6a1f7cca22fd74.ctex"
+uid="uid://px5mdj5seufs"
+path="res://.godot/imported/Character0_Die.png-b115733519fb417c6edf240d0304ea17.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/characters/enemy/basic/Character0_Die.png"
-dest_files=["res://.godot/imported/Character0_Die.png-d4b9318506b517ca5c6a1f7cca22fd74.ctex"]
+source_file="res://assets/characters/units/player/Character0_Die.png"
+dest_files=["res://.godot/imported/Character0_Die.png-b115733519fb417c6edf240d0304ea17.ctex"]
 
 [params]
 

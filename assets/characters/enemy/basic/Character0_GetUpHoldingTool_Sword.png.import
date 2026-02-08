@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bj1vpv5noqx6i"
-path="res://.godot/imported/Character0_GetUpHoldingTool_Sword.png-11529bda62f30ad0150ed0ee5f3589b2.ctex"
+uid="uid://b58hmasx13u2c"
+path="res://.godot/imported/Character0_GetUpHoldingTool_Sword.png-baf04489456e83af6e3f30455bef6d47.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/characters/enemy/basic/Character0_GetUpHoldingTool_Sword.png"
-dest_files=["res://.godot/imported/Character0_GetUpHoldingTool_Sword.png-11529bda62f30ad0150ed0ee5f3589b2.ctex"]
+source_file="res://assets/characters/units/player/Character0_GetUpHoldingTool_Sword.png"
+dest_files=["res://.godot/imported/Character0_GetUpHoldingTool_Sword.png-baf04489456e83af6e3f30455bef6d47.ctex"]
 
 [params]
 

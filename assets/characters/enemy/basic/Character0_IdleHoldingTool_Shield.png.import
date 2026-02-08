@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://w4jcmt06onv1"
-path="res://.godot/imported/Character0_IdleHoldingTool_Shield.png-ab7e01e8a86eca27201eb7051ab80db9.ctex"
+uid="uid://c411ugnxpsd3e"
+path="res://.godot/imported/Character0_IdleHoldingTool_Shield.png-52382884d8e4f341aab688d1ecb39fc7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/characters/enemy/basic/Character0_IdleHoldingTool_Shield.png"
-dest_files=["res://.godot/imported/Character0_IdleHoldingTool_Shield.png-ab7e01e8a86eca27201eb7051ab80db9.ctex"]
+source_file="res://assets/characters/units/player/Character0_IdleHoldingTool_Shield.png"
+dest_files=["res://.godot/imported/Character0_IdleHoldingTool_Shield.png-52382884d8e4f341aab688d1ecb39fc7.ctex"]
 
 [params]
 

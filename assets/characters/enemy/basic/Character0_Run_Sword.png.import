@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://j30ranoaxiuj"
-path="res://.godot/imported/Character0_Run_Sword.png-bb089a67448cb54ab659a882d56584c9.ctex"
+uid="uid://bgjelmfdneb7l"
+path="res://.godot/imported/Character0_Run_Sword.png-f9e3cf0da73499302631cd3bfac0eb40.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/characters/enemy/basic/Character0_Run_Sword.png"
-dest_files=["res://.godot/imported/Character0_Run_Sword.png-bb089a67448cb54ab659a882d56584c9.ctex"]
+source_file="res://assets/characters/units/player/Character0_Run_Sword.png"
+dest_files=["res://.godot/imported/Character0_Run_Sword.png-f9e3cf0da73499302631cd3bfac0eb40.ctex"]
 
 [params]
 

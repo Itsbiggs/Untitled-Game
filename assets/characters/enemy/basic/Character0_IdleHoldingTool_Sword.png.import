@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://k4sc7seqx8xt"
-path="res://.godot/imported/Character0_IdleHoldingTool_Sword.png-f28ac7b6017b21ffed78ea80d336ab5e.ctex"
+uid="uid://cwkqa3sv87lff"
+path="res://.godot/imported/Character0_IdleHoldingTool_Sword.png-7ead5429bb766c7728ad08a85d6eb42b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/characters/enemy/basic/Character0_IdleHoldingTool_Sword.png"
-dest_files=["res://.godot/imported/Character0_IdleHoldingTool_Sword.png-f28ac7b6017b21ffed78ea80d336ab5e.ctex"]
+source_file="res://assets/characters/units/player/Character0_IdleHoldingTool_Sword.png"
+dest_files=["res://.godot/imported/Character0_IdleHoldingTool_Sword.png-7ead5429bb766c7728ad08a85d6eb42b.ctex"]
 
 [params]
 

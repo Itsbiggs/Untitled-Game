@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://brbdlqkmob27g"
-path="res://.godot/imported/Character0_Run_Axe.png-d57d77c598a657a163c4d7edf977700b.ctex"
+uid="uid://cuji7pb64ofvr"
+path="res://.godot/imported/Character0_Run_Axe.png-839756bf960e4428118c0ee2ea4a8f5d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/characters/enemy/basic/Character0_Run_Axe.png"
-dest_files=["res://.godot/imported/Character0_Run_Axe.png-d57d77c598a657a163c4d7edf977700b.ctex"]
+source_file="res://assets/characters/units/player/Character0_Run_Axe.png"
+dest_files=["res://.godot/imported/Character0_Run_Axe.png-839756bf960e4428118c0ee2ea4a8f5d.ctex"]
 
 [params]
 

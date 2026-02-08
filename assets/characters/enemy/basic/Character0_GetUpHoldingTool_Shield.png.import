@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bc4qcy70gnk0h"
-path="res://.godot/imported/Character0_GetUpHoldingTool_Shield.png-6ccc1136707b55c418cb6d143b16b4ba.ctex"
+uid="uid://3wi38sk5ghso"
+path="res://.godot/imported/Character0_GetUpHoldingTool_Shield.png-3030600b6c4512b9bae4fc5732254b81.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/characters/enemy/basic/Character0_GetUpHoldingTool_Shield.png"
-dest_files=["res://.godot/imported/Character0_GetUpHoldingTool_Shield.png-6ccc1136707b55c418cb6d143b16b4ba.ctex"]
+source_file="res://assets/characters/units/player/Character0_GetUpHoldingTool_Shield.png"
+dest_files=["res://.godot/imported/Character0_GetUpHoldingTool_Shield.png-3030600b6c4512b9bae4fc5732254b81.ctex"]
 
 [params]
 

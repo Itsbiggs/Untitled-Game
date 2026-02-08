@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cub0jtvlgg6n0"
-path="res://.godot/imported/Character0_Walk.png-b251263e4826f0c48d69f3318963d50e.ctex"
+uid="uid://dxwjl3aurn4lt"
+path="res://.godot/imported/Character0_Walk.png-69bd8708ed07575403907215901455bd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/characters/enemy/basic/Character0_Walk.png"
-dest_files=["res://.godot/imported/Character0_Walk.png-b251263e4826f0c48d69f3318963d50e.ctex"]
+source_file="res://assets/characters/units/player/Character0_Walk.png"
+dest_files=["res://.godot/imported/Character0_Walk.png-69bd8708ed07575403907215901455bd.ctex"]
 
 [params]
 
