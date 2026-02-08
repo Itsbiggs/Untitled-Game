@@ -1,12 +1,71 @@
-[gd_scene format=3 uid="uid://b78fappkhohji"]
+[gd_scene format=4 uid="uid://b78fappkhohji"]
 
-[ext_resource type="PackedScene" uid="uid://drul31hcugi2x" path="res://scenes/characters/Fighter.tscn" id="1_uwrxv"]
+[ext_resource type="Script" path="res://scripts/game.gd" id="1_game"]
+[ext_resource type="Script" path="res://scripts/turn_manager.gd" id="2_turn"]
+[ext_resource type="PackedScene" path="res://scenes/maps/battle_map.tscn" id="3_map"]
+[ext_resource type="Script" path="res://scripts/grid/grid_highlight.gd" id="4_highlight"]
+[ext_resource type="Script" path="res://scripts/grid/grid_cursor.gd" id="5_cursor"]
+[ext_resource type="Script" path="res://scripts/camera_controller.gd" id="6_camera"]
+[ext_resource type="PackedScene" uid="uid://drul31hcugi2x" path="res://scenes/characters/Fighter.tscn" id="7_fighter"]
+[ext_resource type="Script" path="res://scripts/basic_enemy_ai.gd" id="8_enemy"]
+[ext_resource type="Texture2D" uid="uid://cf2aim7h8kahp" path="res://assets/characters/enemy/basic/Character0_Idle.png" id="9_enemy_tex"]
 
-[node name="Game" type="Node2D" unique_id=435837580]
+[node name="Game" type="Node2D"]
+script = ExtResource("1_game")
 
-[node name="Player" parent="." unique_id=725756720 instance=ExtResource("1_uwrxv")]
-position = Vector2(-53, 69)
+[node name="TurnManager" type="Node" parent="."]
+script = ExtResource("2_turn")
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=1607484490]
-position = Vector2(-53, 55)
-zoom = Vector2(4, 4)
+[node name="BattleMap" parent="." instance=ExtResource("3_map")]
+
+[node name="GridHighlight" type="Node2D" parent="."]
+z_index = 10
+script = ExtResource("4_highlight")
+
+[node name="GridCursor" type="Node2D" parent="."]
+script = ExtResource("5_cursor")
+
+[node name="Units" type="Node2D" parent="."]
+y_sort_enabled = true
+z_index = 20
+
+[node name="Fighter" parent="Units" instance=ExtResource("7_fighter")]
+metadata/start_cell = Vector2i(2, 3)
+
+[node name="Enemy1" type="Node2D" parent="Units"]
+modulate = Color(1, 0.4, 0.4, 1)
+script = ExtResource("8_enemy")
+metadata/start_cell = Vector2i(10, 12)
+
+[node name="Sprite2D" type="Sprite2D" parent="Units/Enemy1"]
+position = Vector2(0, -80)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("9_enemy_tex")
+hframes = 8
+vframes = 5
+frame = 24
+
+[node name="Enemy2" type="Node2D" parent="Units"]
+modulate = Color(1, 0.4, 0.4, 1)
+script = ExtResource("8_enemy")
+metadata/start_cell = Vector2i(11, 5)
+
+[node name="Sprite2D" type="Sprite2D" parent="Units/Enemy2"]
+position = Vector2(0, -80)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("9_enemy_tex")
+hframes = 8
+vframes = 5
+frame = 24
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(0.3, 0.3)
+script = ExtResource("6_camera")
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="TurnLabel" type="Label" parent="UI"]
+offset_right = 200.0
+offset_bottom = 40.0
+theme_override_font_sizes/font_size = 24
+text = "Player Turn"
