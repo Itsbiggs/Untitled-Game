@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bfmu07qkeisd6"
-path="res://.godot/imported/Character0_InteractHoldingTool_Sword.png-6f0fb134742d55455a75369f83afc825.ctex"
+path="res://.godot/imported/Character0_InteractHoldingTool_Sword.png-7eed1901fbbbc60a0958c6c73b47a164.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/characters/units/player/Character0_InteractHoldingTool_Sword.png"
-dest_files=["res://.godot/imported/Character0_InteractHoldingTool_Sword.png-6f0fb134742d55455a75369f83afc825.ctex"]
+source_file="res://assets/characters/enemy/basic/Character0_InteractHoldingTool_Sword.png"
+dest_files=["res://.godot/imported/Character0_InteractHoldingTool_Sword.png-7eed1901fbbbc60a0958c6c73b47a164.ctex"]
 
 [params]
 
