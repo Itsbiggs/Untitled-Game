@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dmop067i4k5pt"
-path="res://.godot/imported/Character0_InteractHoldingTool_Shield.png-6c1878d8ba93bfc93067b1648ac4d90e.ctex"
+path="res://.godot/imported/Character0_InteractHoldingTool_Shield.png-e65efe5a59152c31be87ecaaed83e5e7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/characters/units/player/Character0_InteractHoldingTool_Shield.png"
-dest_files=["res://.godot/imported/Character0_InteractHoldingTool_Shield.png-6c1878d8ba93bfc93067b1648ac4d90e.ctex"]
+source_file="res://assets/characters/enemy/basic/Character0_InteractHoldingTool_Shield.png"
+dest_files=["res://.godot/imported/Character0_InteractHoldingTool_Shield.png-e65efe5a59152c31be87ecaaed83e5e7.ctex"]
 
 [params]
 

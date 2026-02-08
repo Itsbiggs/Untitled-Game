@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://v4grm8kgjvpj"
-path="res://.godot/imported/Character0_Run_Shield.png-bb679a98391cf93c60c9fb9e934922c4.ctex"
+path="res://.godot/imported/Character0_Run_Shield.png-8c94aad2f19e9a91edf3a05a29047833.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/characters/units/player/Character0_Run_Shield.png"
-dest_files=["res://.godot/imported/Character0_Run_Shield.png-bb679a98391cf93c60c9fb9e934922c4.ctex"]
+source_file="res://assets/characters/enemy/basic/Character0_Run_Shield.png"
+dest_files=["res://.godot/imported/Character0_Run_Shield.png-8c94aad2f19e9a91edf3a05a29047833.ctex"]
 
 [params]
 
