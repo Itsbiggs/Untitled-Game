@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://baultsa0vq0al"
-path="res://.godot/imported/Character0_Swing.png-c07d3965cef41d994a75085d4f1cc65b.ctex"
+path="res://.godot/imported/Character0_Swing.png-4f057d6a09ec3a4e492687dab70fb5b5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/characters/units/player/Character0_Swing.png"
-dest_files=["res://.godot/imported/Character0_Swing.png-c07d3965cef41d994a75085d4f1cc65b.ctex"]
+source_file="res://assets/characters/enemy/basic/Character0_Swing.png"
+dest_files=["res://.godot/imported/Character0_Swing.png-4f057d6a09ec3a4e492687dab70fb5b5.ctex"]
 
 [params]
 
