@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bhpp1ldxue24w"
-path="res://.godot/imported/Character0_Interact.png-9aceab90bd3991b8f94a6284d3aa162f.ctex"
+path="res://.godot/imported/Character0_Interact.png-d9cc00e6dbe6e5bf91806878df6ab9bd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/characters/units/player/Character0_Interact.png"
-dest_files=["res://.godot/imported/Character0_Interact.png-9aceab90bd3991b8f94a6284d3aa162f.ctex"]
+source_file="res://assets/characters/enemy/basic/Character0_Interact.png"
+dest_files=["res://.godot/imported/Character0_Interact.png-d9cc00e6dbe6e5bf91806878df6ab9bd.ctex"]
 
 [params]
 
