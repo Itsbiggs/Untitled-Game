@@ -3,6 +3,9 @@
 [ext_resource type="Texture2D" uid="uid://3stqruyqaajm" path="res://assets/characters/units/player/Character0_Idle.png" id="1_idle"]
 [ext_resource type="Script" uid="uid://cs8ps6dcxf4qf" path="res://scripts/fighter.gd" id="2_fighter"]
 [ext_resource type="Texture2D" uid="uid://dxwjl3aurn4lt" path="res://assets/characters/units/player/Character0_Walk.png" id="3_2c30n"]
+[ext_resource type="Texture2D" uid="uid://ct5ec2vbf0w2r" path="res://assets/characters/units/player/Character0_SwordAttack.png" id="4_attack"]
+[ext_resource type="Texture2D" uid="uid://bvpk0i3vhwqvs" path="res://assets/characters/units/player/Character0_Damage.png" id="5_damage"]
+[ext_resource type="Texture2D" uid="uid://px5mdj5seufs" path="res://assets/characters/units/player/Character0_Die.png" id="6_die"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ifvyq"]
 atlas = ExtResource("1_idle")
@@ -283,13 +286,25 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Fighter" type="Node2D" unique_id=1566241058]
+[node name="Fighter" type="Node2D"]
 script = ExtResource("2_fighter")
+attack_texture = ExtResource("4_attack")
+damage_texture = ExtResource("5_damage")
+die_texture = ExtResource("6_die")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1383155905]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -80)
 scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_m4tat")
 animation = &"idle"
-frame_progress = 0.6497785
+flip_h = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(0, -80)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_idle")
+hframes = 8
+vframes = 5
+frame = 8
 flip_h = true

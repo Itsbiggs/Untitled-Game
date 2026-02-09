@@ -6,6 +6,7 @@ var reachable_cells: Array[Vector2i] = []
 var path_cells: Array[Vector2i] = []
 var hover_cell := Vector2i(-1, -1)
 var enemy_cells: Array[Vector2i] = []
+var attack_target_cells: Array[Vector2i] = []
 
 const COLOR_REACHABLE := Color(0.3, 0.5, 1.0, 0.3)
 const COLOR_PATH := Color(1.0, 0.9, 0.1, 0.4)
@@ -16,6 +17,9 @@ const OUTLINE_REACHABLE := Color(0.3, 0.5, 1.0, 0.8)
 const OUTLINE_PATH := Color(1.0, 0.9, 0.1, 0.9)
 const OUTLINE_HOVER := Color(1.0, 1.0, 1.0, 0.7)
 const OUTLINE_ENEMY := Color(1.0, 0.2, 0.2, 0.8)
+
+const COLOR_ATTACK_TARGET := Color(1.0, 0.6, 0.0, 0.4)
+const OUTLINE_ATTACK_TARGET := Color(1.0, 0.6, 0.0, 0.9)
 
 const DIAMOND_INSET := 0.92
 
@@ -34,6 +38,9 @@ func _draw() -> void:
 
 	for cell in enemy_cells:
 		_draw_diamond(cell, COLOR_ENEMY, OUTLINE_ENEMY)
+
+	for cell in attack_target_cells:
+		_draw_diamond(cell, COLOR_ATTACK_TARGET, OUTLINE_ATTACK_TARGET)
 
 	if grid_manager.is_cell_valid(hover_cell):
 		_draw_diamond(hover_cell, COLOR_HOVER, OUTLINE_HOVER)
@@ -70,9 +77,14 @@ func set_enemies(cells: Array[Vector2i]) -> void:
 	enemy_cells = cells
 	queue_redraw()
 
+func set_attack_targets(cells: Array[Vector2i]) -> void:
+	attack_target_cells = cells
+	queue_redraw()
+
 func clear_all() -> void:
 	reachable_cells = []
 	path_cells = []
 	hover_cell = Vector2i(-1, -1)
 	enemy_cells = []
+	attack_target_cells = []
 	queue_redraw()
