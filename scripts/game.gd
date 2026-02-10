@@ -115,13 +115,17 @@ func _select_unit(unit: Unit) -> void:
 	selected_unit = unit
 	selected_unit.modulate = Color(1.2, 1.2, 1.5)
 
+	# DEBUG: Print what's happening
+	print("=== SELECTING UNIT ===")
+	print("Unit position: ", unit.grid_position)
+	print("Move range: ", unit.move_range)
+	
 	reachable_cells = grid_manager.get_reachable_cells(unit.grid_position, unit.move_range)
+	
+	print("Reachable cells found: ", reachable_cells.size())
+	print("First 10 cells: ", reachable_cells.slice(0, 10))
+	
 	grid_highlight.set_reachable(reachable_cells)
-
-	var ecells: Array[Vector2i] = []
-	for e in enemy_units:
-		ecells.append(e.grid_position)
-	grid_highlight.set_enemies(ecells)
 
 func _deselect_unit() -> void:
 	if selected_unit:

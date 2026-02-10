@@ -47,28 +47,96 @@ A turn-based tactical roguelike with isometric pixel art, built in Godot 4.6.
 
 ## Project Structure
 
+# Tactical Souls
+
+A turn-based tactical roguelike with dual-class system and co-op multiplayer.
+
+## Project Structure
 ```
 Untitled-Game/
 ├── assets/
-│   ├── characters/       # Character sprite sheets
-│   │   ├── units/player/   # Player character art
-│   │   └── enemy/basic/    # Enemy character art
-│   └── tilesheets/       # Ground and wall tile images
-├── resources/
-│   └── tilesets/         # Godot tileset resources (Dungeon.tres)
+│   ├── characters/          # Character sprite sheets
+│   │   ├── enemy/
+│   │   │   └── basic/      # Basic enemy sprites
+│   │   └── units/
+│   │       └── player/     # Player character sprites
+│   └── tilesheets/          # Ground and wall tile images
+│       └── dungeon/         # Dungeon tileset art
+│
+├── resources/               # Data files and configurations
+│   ├── stats/              # Character stat templates (.tres files)
+│   │   ├── classes/        # Single class stat templates (8 base classes)
+│   │   └── dual_classes/   # Dual-class combinations (56 builds)
+│   └── tilesets/           # Godot tileset resources
+│       └── Dungeon.tres    # Main dungeon tileset
+│
 ├── scenes/
-│   ├── game.tscn         # Main game scene
-│   ├── characters/       # Character scenes (Fighter.tscn)
-│   └── maps/             # Battle map scenes
+│   ├── game.tscn           # Main game scene
+│   ├── characters/         # Character scene files
+│   │   ├── enemies/
+│   │   │   └── BasicEnemy.tscn
+│   │   └── fighter/
+│   │       └── Fighter.tscn
+│   └── maps/               # Battle map scenes
+│       ├── battle_map.tscn
+│       └── example_map.tscn
+│
 └── scripts/
-    ├── game.gd           # Game coordinator (selection, movement, turns)
-    ├── unit.gd           # Base unit class (movement, grid position)
-    ├── fighter.gd        # Player unit
-    ├── basic_enemy_ai.gd # Enemy AI (chase nearest player)
-    ├── turn_manager.gd   # Turn state machine
-    ├── camera_controller.gd # Camera pan/zoom/drag
-    └── grid/
-        ├── grid_manager.gd   # Grid system, A* pathfinding, unit tracking
-        ├── grid_cursor.gd    # Mouse-to-grid conversion, hover/click signals
-        └── grid_highlight.gd # Visual highlights (range, path, hover)
+	├── core/               # Core game systems
+	│   ├── grid_manager.gd     # Grid system, A* pathfinding, unit tracking
+	│   ├── turn_manager.gd     # Turn state machine (player/enemy phases)
+	│   ├── unit.gd             # Base unit class (stats, modifiers, combat)
+	│   ├── unit_stats.gd       # Stat resource definition (exported to .tres)
+	│   └── stat_modifier.gd    # Buff/debuff/item modifier system
+	│
+	├── ui/                 # User interface controllers
+	│   ├── camera_controller.gd  # Camera pan/zoom/drag
+	│   ├── floating_text.gd      # Damage numbers, status text
+	│   ├── grid_cursor.gd        # Mouse-to-grid conversion, hover/click
+	│   ├── grid_highlight.gd     # Visual highlights (range, path, hover)
+	│   └── health_bar.gd         # Unit health bar display
+	│
+	├── basic_enemy_ai.gd   # Enemy AI (chase nearest player)
+	├── fighter.gd          # Player fighter unit
+	└── game.gd             # Game coordinator (selection, movement, orchestration)
 ```
+
+## Key Systems
+
+### Grid System (`core/grid_manager.gd`)
+- Isometric grid with A* pathfinding
+- Unit tracking and registration
+- Line of sight calculations
+- Area of effect queries (radius, cone, line)
+- Tile effects system (burning tiles, hexes, shield walls)
+
+### Stats System (`core/unit.gd`, `unit_stats.gd`, `stat_modifier.gd`)
+- Resource-based stat templates
+- Dynamic stat calculation
+- Modifier system for buffs/debuffs/items
+- Supports 56 dual-class combinations
+
+### Turn Management (`core/turn_manager.gd`)
+- Player phase → Enemy phase alternation
+- Turn state tracking
+- Animation handling
+
+### UI Systems (`ui/`)
+- Grid cursor with hover detection
+- Movement range highlighting
+- Camera controls (pan, zoom, drag)
+- Health bars and floating text
+
+## Getting Started
+
+1. Open `game.tscn` to see the main game scene
+2. Character stats are configured in `resources/stats/`
+3. Modify grid manager settings in `scenes/maps/battle_map.tscn`
+4. Player units extend `Unit` class from `scripts/core/unit.gd`
+
+## Development Notes
+
+- All units inherit from `Unit` base class
+- Stats are data-driven through `.tres` resource files
+- Grid manager handles all pathfinding and spatial queries
+- Modifier system allows dynamic stat changes (items, buffs, terrain effects)
