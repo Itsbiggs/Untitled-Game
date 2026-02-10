@@ -393,10 +393,7 @@ func get_line_cells(from: Vector2i, to: Vector2i) -> Array[Vector2i]:
 			y0 += sy
 	
 	return cells
-  
-  func get_unit_at(cell: Vector2i) -> Node2D:
-	return occupied_cells.get(cell, null)
-
+	
 func get_adjacent_units(cell: Vector2i, asking_unit: Node2D) -> Array[Unit]:
 	var result: Array[Unit] = []
 	var offsets: Array[Vector2i] = [
