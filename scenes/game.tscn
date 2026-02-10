@@ -1,13 +1,13 @@
 [gd_scene format=3 uid="uid://b78fappkhohji"]
 
 [ext_resource type="Script" uid="uid://3wpb3c4agog0" path="res://scripts/game.gd" id="1_game"]
-[ext_resource type="Script" uid="uid://ddqenhjha65gf" path="res://scripts/turn_manager.gd" id="2_turn"]
+[ext_resource type="Script" uid="uid://ddqenhjha65gf" path="res://scripts/core/turn_manager.gd" id="2_turn"]
 [ext_resource type="PackedScene" uid="uid://dsvjynnugp0o6" path="res://scenes/maps/battle_map.tscn" id="3_map"]
-[ext_resource type="Script" uid="uid://dyjm2fk63d8fe" path="res://scripts/grid/grid_highlight.gd" id="4_highlight"]
-[ext_resource type="Script" uid="uid://dx6ufa5dokg8l" path="res://scripts/grid/grid_cursor.gd" id="5_cursor"]
-[ext_resource type="Script" uid="uid://dccewueqb0i48" path="res://scripts/camera_controller.gd" id="6_camera"]
-[ext_resource type="PackedScene" uid="uid://drul31hcugi2x" path="res://scenes/characters/Fighter.tscn" id="7_fighter"]
-[ext_resource type="PackedScene" path="res://scenes/characters/BasicEnemy.tscn" id="8_basic_enemy"]
+[ext_resource type="Script" uid="uid://dyjm2fk63d8fe" path="res://scripts/ui/grid_highlight.gd" id="4_highlight"]
+[ext_resource type="Script" uid="uid://dx6ufa5dokg8l" path="res://scripts/ui/grid_cursor.gd" id="5_cursor"]
+[ext_resource type="Script" uid="uid://dccewueqb0i48" path="res://scripts/ui/camera_controller.gd" id="6_camera"]
+[ext_resource type="PackedScene" uid="uid://drul31hcugi2x" path="res://scenes/characters/fighter/Fighter.tscn" id="7_fighter"]
+[ext_resource type="PackedScene" path="res://scenes/characters/enemies/BasicEnemy.tscn" id="8_basic_enemy"]
 
 [node name="Game" type="Node2D" unique_id=494723615]
 script = ExtResource("1_game")
