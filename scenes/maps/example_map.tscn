@@ -1,6 +1,6 @@
 [gd_scene format=4 uid="uid://e8x64b4t51uh"]
 
-[ext_resource type="TileSet" uid="uid://1nlrrp18x4eu" path="res://resources/tilesets/Dungeon.tres" id="1_jhtfe"]
+[ext_resource type="TileSet" path="res://resources/tilesets/Dungeon.tres" id="1_jhtfe"]
 
 [node name="Example Map" type="Node2D" unique_id=411932295]
 

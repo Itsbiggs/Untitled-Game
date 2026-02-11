@@ -1,7 +1,7 @@
 [gd_scene format=4 uid="uid://dsvjynnugp0o6"]
 
-[ext_resource type="TileSet" uid="uid://1nlrrp18x4eu" path="res://resources/tilesets/Dungeon.tres" id="1_jhtfe"]
-[ext_resource type="Script" uid="uid://c1dsn6cexpx5" path="res://scripts/core/grid_manager.gd" id="2_grid"]
+[ext_resource type="TileSet" path="res://resources/tilesets/Dungeon.tres" id="1_jhtfe"]
+[ext_resource type="Script" path="res://scripts/core/grid_manager.gd" id="2_grid"]
 
 [node name="BattleMap" type="Node2D" unique_id=532878445]
 
