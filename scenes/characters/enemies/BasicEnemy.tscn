@@ -1,10 +1,10 @@
 [gd_scene format=4]
 
-[ext_resource type="Script" uid="uid://c0bxfmflt7dxy" path="res://scripts/characters/basic_enemy_ai.gd" id="1_enemy"]
-[ext_resource type="Texture2D" uid="uid://3stqruyqaajm" path="res://assets/characters/enemy/basic/Character0_Idle.png" id="2_tex"]
-[ext_resource type="Texture2D" uid="uid://ct5ec2vbf0w2r" path="res://assets/characters/enemy/basic/Character0_SwordAttack.png" id="3_attack"]
-[ext_resource type="Texture2D" uid="uid://bvpk0i3vhwqvs" path="res://assets/characters/enemy/basic/Character0_Damage.png" id="4_damage"]
-[ext_resource type="Texture2D" uid="uid://px5mdj5seufs" path="res://assets/characters/enemy/basic/Character0_Die.png" id="5_die"]
+[ext_resource type="Script" path="res://scripts/characters/basic_enemy_ai.gd" id="1_enemy"]
+[ext_resource type="Texture2D" path="res://assets/characters/enemy/basic/Character0_Idle.png" id="2_tex"]
+[ext_resource type="Texture2D" path="res://assets/characters/enemy/basic/Character0_SwordAttack.png" id="3_attack"]
+[ext_resource type="Texture2D" path="res://assets/characters/enemy/basic/Character0_Damage.png" id="4_damage"]
+[ext_resource type="Texture2D" path="res://assets/characters/enemy/basic/Character0_Die.png" id="5_die"]
 
 [node name="BasicEnemy" type="Node2D"]
 modulate = Color(1, 0.4, 0.4, 1)
