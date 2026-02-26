@@ -1,49 +1,49 @@
 [gd_scene format=3 uid="uid://b78fappkhohji"]
 
-[ext_resource type="Script" uid="uid://3wpb3c4agog0" path="res://scripts/game.gd" id="1_game"]
-[ext_resource type="Script" uid="uid://ddqenhjha65gf" path="res://scripts/turn_manager.gd" id="2_turn"]
-[ext_resource type="PackedScene" uid="uid://dsvjynnugp0o6" path="res://scenes/maps/battle_map.tscn" id="3_map"]
-[ext_resource type="Script" uid="uid://dyjm2fk63d8fe" path="res://scripts/grid/grid_highlight.gd" id="4_highlight"]
-[ext_resource type="Script" uid="uid://dx6ufa5dokg8l" path="res://scripts/grid/grid_cursor.gd" id="5_cursor"]
-[ext_resource type="Script" uid="uid://dccewueqb0i48" path="res://scripts/camera_controller.gd" id="6_camera"]
-[ext_resource type="PackedScene" uid="uid://drul31hcugi2x" path="res://scenes/characters/Fighter.tscn" id="7_fighter"]
-[ext_resource type="PackedScene" path="res://scenes/characters/BasicEnemy.tscn" id="8_basic_enemy"]
+[ext_resource type="Script" path="res://scripts/game.gd" id="1_game"]
+[ext_resource type="Script" path="res://scripts/core/turn_manager.gd" id="2_turn"]
+[ext_resource type="PackedScene" path="res://scenes/maps/battle_map.tscn" id="3_map"]
+[ext_resource type="Script" path="res://scripts/ui/grid_highlight.gd" id="4_highlight"]
+[ext_resource type="Script" path="res://scripts/ui/grid_cursor.gd" id="5_cursor"]
+[ext_resource type="Script" path="res://scripts/ui/camera_controller.gd" id="6_camera"]
+[ext_resource type="PackedScene" path="res://scenes/characters/fighter/Fighter.tscn" id="7_fighter"]
+[ext_resource type="PackedScene" path="res://scenes/characters/enemies/BasicEnemy.tscn" id="8_basic_enemy"]
 
-[node name="Game" type="Node2D" unique_id=1697090357]
+[node name="Game" type="Node2D" unique_id=494723615]
 script = ExtResource("1_game")
 
-[node name="TurnManager" type="Node" parent="." unique_id=710550870]
+[node name="TurnManager" type="Node" parent="." unique_id=2108869391]
 script = ExtResource("2_turn")
 
-[node name="BattleMap" parent="." unique_id=688341704 instance=ExtResource("3_map")]
+[node name="BattleMap" parent="." unique_id=1823764627 instance=ExtResource("3_map")]
 
-[node name="GridHighlight" type="Node2D" parent="." unique_id=1451663836]
+[node name="GridHighlight" type="Node2D" parent="." unique_id=1349780339]
 z_index = 10
 script = ExtResource("4_highlight")
 
-[node name="GridCursor" type="Node2D" parent="." unique_id=1170824513]
+[node name="GridCursor" type="Node2D" parent="." unique_id=1008594811]
 script = ExtResource("5_cursor")
 
-[node name="Units" type="Node2D" parent="." unique_id=463884614]
+[node name="Units" type="Node2D" parent="." unique_id=1610491478]
 z_index = 20
 y_sort_enabled = true
 
-[node name="Fighter" parent="Units" unique_id=1079835944 instance=ExtResource("7_fighter")]
+[node name="Fighter" parent="Units" unique_id=642836066 instance=ExtResource("7_fighter")]
 metadata/start_cell = Vector2i(2, 3)
 
-[node name="Enemy1" parent="Units" unique_id=403720923 instance=ExtResource("8_basic_enemy")]
+[node name="Enemy1" parent="Units" unique_id=1185821798 instance=ExtResource("8_basic_enemy")]
 metadata/start_cell = Vector2i(10, 12)
 
-[node name="Enemy2" parent="Units" unique_id=1577555135 instance=ExtResource("8_basic_enemy")]
+[node name="Enemy2" parent="Units" unique_id=773548682 instance=ExtResource("8_basic_enemy")]
 metadata/start_cell = Vector2i(11, 5)
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=1365691786]
+[node name="Camera2D" type="Camera2D" parent="." unique_id=179381346]
 zoom = Vector2(0.3, 0.3)
 script = ExtResource("6_camera")
 
-[node name="UI" type="CanvasLayer" parent="." unique_id=597189917]
+[node name="UI" type="CanvasLayer" parent="." unique_id=1153418483]
 
-[node name="TurnLabel" type="Label" parent="UI" unique_id=1133454619]
+[node name="TurnLabel" type="Label" parent="UI" unique_id=386411132]
 offset_right = 200.0
 offset_bottom = 40.0
 theme_override_font_sizes/font_size = 24

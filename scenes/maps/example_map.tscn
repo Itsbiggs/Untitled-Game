@@ -1,6 +1,6 @@
 [gd_scene format=4 uid="uid://e8x64b4t51uh"]
 
-[ext_resource type="TileSet" uid="uid://1nlrrp18x4eu" path="res://resources/tilesets/Dungeon.tres" id="1_jhtfe"]
+[ext_resource type="TileSet" path="res://resources/tilesets/Dungeon.tres" id="1_jhtfe"]
 
 [node name="Example Map" type="Node2D" unique_id=411932295]
 
@@ -12,5 +12,5 @@ tile_set = ExtResource("1_jhtfe")
 
 [node name="Walls" type="TileMapLayer" parent="." unique_id=1503955624]
 y_sort_enabled = true
-tile_map_data = PackedByteArray("AAAEAAwAzAACAAIAAAAEAAsAzAAGAAIAAAAFAAoAzAACAAIAAAADAA0AzAAGAAIAAAADAA4AzAAGAAIAAAACAA8AzAAGAAIAAAAFAAkAzAAGAAIAAAAGAAgAzAAGAAIAAAAGAAcAzAAGAAIAAAA=")
+tile_map_data = PackedByteArray("AAAEAAwAqwAJAAQAAAAEAAsAqwAJAAQAAAADAA0AqwAJAAQAAAADAA4AqwAJAAQAAAACAA8AqwAJAAQAAAAFAAkAqwAJAAQAAAAGAAgAqwAJAAQAAAAGAAcAqwAJAAQAAAAFAAoAqwAJAAQAAAA=")
 tile_set = ExtResource("1_jhtfe")
